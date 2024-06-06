@@ -32,7 +32,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Capital Gains After-Tax Rate of Return Calculator</h1>
+      <h1>After-Tax Capital Gain Return Calculator</h1>
       <InputForm onCalculate={calculateAfterTaxReturn} />
       <Results results={results} />
     </div>
