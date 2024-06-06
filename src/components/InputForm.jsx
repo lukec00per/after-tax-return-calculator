@@ -42,7 +42,7 @@ const InputForm = ({ onCalculate }) => {
                 />
             </div>
             <div>
-                <label>Pre-Tax Rate of Return (%):</label>
+                <label>Rate of Return (%):</label>
                 <input 
                     type="number" 
                     value={preTaxRate} 
@@ -51,7 +51,7 @@ const InputForm = ({ onCalculate }) => {
             </div>
             {taxScenarios.map((scenario, index) => (
                 <div key={index}>
-                    <h3>Tax Scenario {index + 1}</h3>
+                    <h3>Taxes</h3>
                     <div>
                         <label>Federal Tax Rate (%):</label>
                         <input 
@@ -76,13 +76,10 @@ const InputForm = ({ onCalculate }) => {
                             onChange={(e) => handleScenarioChange(index, 'local', e.target.value)} 
                         />
                     </div>
-                    {index !== 0 && (
-                        <button type="button" onClick={() => handleRemoveScenario(index)}>Remove Scenario</button>
-                    )}
+            
                 </div>
             ))}
             <button type="submit">Calculate</button>
-            <button type="button" onClick={handleAddScenario}>Add Tax Scenario</button>
         </form>
     );
 };

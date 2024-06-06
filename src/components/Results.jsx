@@ -16,8 +16,7 @@ const Results = ({ results }) => {
             <h2>Results</h2>
             {results.map((result, index) => (
                 <div key={index}>
-                    <h3>Tax Scenario {index + 1}</h3>
-                    <p>After-Tax Rate of Return: {result.afterTaxRate.toFixed(2)}%</p>
+                    <p>Rate of Return: {result.afterTaxRate.toFixed(2)}%</p>
                     <p>Final Amount After Taxes: {formatCurrency(result.finalAmount)}</p>
                 </div>
             ))}
