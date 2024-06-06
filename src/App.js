@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { useState } from "react";
+import InputForm from "./components/InputForm";
+import Results from "./components/Results";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [results, setResults] = useState(null);
+
+  const calculateAfterTaxReturn = (initialAmount, preTaxRate, taxScenarios) => {
+    const initial = parseFloat(initialAmount);
+    const preTax = parseFloat(preTaxRate) / 100;
+
+    const newResults = taxScenarios.map((scenario) => {
+      const federalTax = parseFloat(scenario.federal) / 100 || 0;
+      const stateTax = parseFloat(scenario.state) / 100 || 0;
+      const localTax = parseFloat(scenario.local) / 100 || 0;
+
+      const totalTaxRate = federalTax + stateTax + localTax;
+      const afterTaxRate = preTax * (1 - totalTaxRate);
+
+      const finalAmount = initial * (1 + afterTaxRate);
+
+      return {
+        afterTaxRate: afterTaxRate * 100,
+        finalAmount: finalAmount,
+      };
+    });
+
+    setResults(newResults);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Capital Gains After-Tax Rate of Return Calculator</h1>
+      <InputForm onCalculate={calculateAfterTaxReturn} />
+      <Results results={results} />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,90 @@
+// src/components/InputForm.js
+import React, { useState } from 'react';
+
+const InputForm = ({ onCalculate }) => {
+    const [initialAmount, setInitialAmount] = useState('');
+    const [preTaxRate, setPreTaxRate] = useState('');
+    const [taxScenarios, setTaxScenarios] = useState([{ federal: '', state: '', local: '' }]);
+
+    const handleAddScenario = () => {
+        setTaxScenarios([...taxScenarios, { federal: '', state: '', local: '' }]);
+    };
+
+    const handleRemoveScenario = (index) => {
+        if (index !== 0) {
+            setTaxScenarios(taxScenarios.filter((_, i) => i !== index));
+        }
+    };
+
+    const handleScenarioChange = (index, key, value) => {
+        const newTaxScenarios = taxScenarios.map((scenario, i) => {
+            if (i === index) {
+                return { ...scenario, [key]: value };
+            }
+            return scenario;
+        });
+        setTaxScenarios(newTaxScenarios);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        onCalculate(initialAmount, preTaxRate, taxScenarios);
+    };
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <div>
+                <label>Initial Amount:</label>
+                <input 
+                    type="number" 
+                    value={initialAmount} 
+                    onChange={(e) => setInitialAmount(e.target.value)} 
+                />
+            </div>
+            <div>
+                <label>Pre-Tax Rate of Return (%):</label>
+                <input 
+                    type="number" 
+                    value={preTaxRate} 
+                    onChange={(e) => setPreTaxRate(e.target.value)} 
+                />
+            </div>
+            {taxScenarios.map((scenario, index) => (
+                <div key={index}>
+                    <h3>Tax Scenario {index + 1}</h3>
+                    <div>
+                        <label>Federal Tax Rate (%):</label>
+                        <input 
+                            type="number" 
+                            value={scenario.federal} 
+                            onChange={(e) => handleScenarioChange(index, 'federal', e.target.value)} 
+                        />
+                    </div>
+                    <div>
+                        <label>State Tax Rate (%):</label>
+                        <input 
+                            type="number" 
+                            value={scenario.state} 
+                            onChange={(e) => handleScenarioChange(index, 'state', e.target.value)} 
+                        />
+                    </div>
+                    <div>
+                        <label>Local Tax Rate (%):</label>
+                        <input 
+                            type="number" 
+                            value={scenario.local} 
+                            onChange={(e) => handleScenarioChange(index, 'local', e.target.value)} 
+                        />
+                    </div>
+                    {index !== 0 && (
+                        <button type="button" onClick={() => handleRemoveScenario(index)}>Remove Scenario</button>
+                    )}
+                </div>
+            ))}
+            <button type="submit">Calculate</button>
+            <button type="button" onClick={handleAddScenario}>Add Tax Scenario</button>
+        </form>
+    );
+};
+
+export default InputForm;
