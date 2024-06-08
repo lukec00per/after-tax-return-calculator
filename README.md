@@ -1,6 +1,6 @@
-# After-Tax Capital Gain Return Calculator
+# After-Tax Return Calculator
 
-This is a professional web application that allows users to calculate the after-tax rate of return on capital gains. Users can input an initial amount, a pre-tax rate of return, and various tax rates at the federal, state, and local levels. The application supports multiple tax scenarios to compare and contrast how different taxation rates affect the final amount.
+This professional web application allows users to calculate the after-tax rate of return on capital gains. Users can input an initial amount, a pre-tax rate of return, and various tax rates at the federal, state, and local levels. The application supports multiple tax scenarios to compare and contrast how taxation rates affect the final amount.
 
 ## Table of Contents
 
@@ -25,8 +25,8 @@ To run this application locally, follow these steps:
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/your-username/after-tax-capital-gain-return-calculator.git
-    cd after-tax-capital-gain-return-calculator
+    git clone https://github.com/your-username/after-tax-return-calculator.git
+    cd after-tax-return-calculator
     ```
 
 2. **Install dependencies**:
@@ -47,13 +47,13 @@ To run this application locally, follow these steps:
 
 1. **Open the Application**: Open your web browser and go to `http://localhost:3000`.
 
-2. **Enter Initial Amount**: Input the initial amount of the investment.
+2. **Enter Initial Amount**: Input the initial investment amount.
 
 3. **Specify Pre-Tax Rate of Return**: Enter the expected pre-tax rate of return as a percentage.
 
 4. **Add Tax Scenarios**:
-    - Click on "Add Tax Scenario" to add new tax rate fields.
-    - Enter the federal, state, and local tax rates for each scenario.
+    - Click "Add Tax Scenario" to add new tax rate fields.
+    - Enter federal, state, and local tax rates for each scenario.
     - Click "Remove Scenario" to delete any additional scenarios (except the first one).
 
 5. **Calculate**:
@@ -65,7 +65,7 @@ To run this application locally, follow these steps:
 Contributions are welcome! If you have any suggestions or improvements, please follow these steps:
 
 1. Fork the repository.
-2. Create a new branch for your feature or bugfix.
+2. Create a new branch for your feature or bug fix.
 3. Commit your changes and push the branch to your forked repository.
 4. Create a Pull Request with a detailed description of your changes.
 
