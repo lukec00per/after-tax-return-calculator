@@ -51,13 +51,10 @@ To run this application locally, follow these steps:
 
 3. **Specify Pre-Tax Rate of Return**: Enter the expected pre-tax rate of return as a percentage.
 
-4. **Add Tax Scenarios**:
-    - Click "Add Tax Scenario" to add new tax rate fields.
-    - Enter federal, state, and local tax rates for each scenario.
-    - Click "Remove Scenario" to delete any additional scenarios (except the first one).
+4. **Enter Tax Rates**: Enter federal, state, and local tax rates for each scenario.
 
 5. **Calculate**:
-    - Click on the "Calculate" button to compute the after-tax rate of return and final amount for each scenario.
+    - Click on the "Calculate" button to compute the after-tax rate of return.
     - The results will be displayed below the form.
 
 ## Contributing
