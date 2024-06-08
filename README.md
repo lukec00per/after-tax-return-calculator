@@ -51,7 +51,7 @@ To run this application locally, follow these steps:
 
 3. **Specify Pre-Tax Rate of Return**: Enter the expected pre-tax rate of return as a percentage.
 
-4. **Enter Tax Rates**: Enter federal, state, and local tax rates for each scenario.
+4. **Enter Tax Rates**: Input federal, state, and local tax rates.
 
 5. **Calculate**:
     - Click on the "Calculate" button to compute the after-tax rate of return.
