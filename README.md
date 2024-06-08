@@ -53,8 +53,7 @@ To run this application locally, follow these steps:
 
 4. **Enter Tax Rates**: Input federal, state, and local tax rates.
 
-5. **Calculate**:
-    - Click on the "Calculate" button to compute the after-tax rate of return.
+5. **Calculate**: Click "Calculate" to compute the after-tax rate of return.
     - The results will be displayed below the form.
 
 ## Contributing
