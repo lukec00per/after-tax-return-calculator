@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# After-Tax Capital Gain Return Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a professional web application that allows users to calculate the after-tax rate of return on capital gains. Users can input an initial amount, a pre-tax rate of return, and various tax rates at the federal, state, and local levels. The application supports multiple tax scenarios to compare and contrast how different taxation rates affect the final amount.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Input Initial Amount**: Enter the initial investment amount.
+- **Pre-Tax Rate of Return**: Specify the pre-tax rate of return.
+- **Tax Scenarios**: Add and remove tax scenarios with federal, state, and local tax rates.
+- **Calculation**: Calculate the after-tax rate of return and final amount for each scenario.
+- **Comparison**: Compare multiple tax scenarios to see how different tax rates impact the return on investment.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+To run this application locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository**:
 
-### `npm run build`
+    ```bash
+    git clone https://github.com/your-username/after-tax-capital-gain-return-calculator.git
+    cd after-tax-capital-gain-return-calculator
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install dependencies**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Start the development server**:
 
-### `npm run eject`
+    ```bash
+    npm start
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    The application will run on `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Open the Application**: Open your web browser and go to `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Enter Initial Amount**: Input the initial amount of the investment.
 
-## Learn More
+3. **Specify Pre-Tax Rate of Return**: Enter the expected pre-tax rate of return as a percentage.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Add Tax Scenarios**:
+    - Click on "Add Tax Scenario" to add new tax rate fields.
+    - Enter the federal, state, and local tax rates for each scenario.
+    - Click "Remove Scenario" to delete any additional scenarios (except the first one).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. **Calculate**:
+    - Click on the "Calculate" button to compute the after-tax rate of return and final amount for each scenario.
+    - The results will be displayed below the form.
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions are welcome! If you have any suggestions or improvements, please follow these steps:
 
-### Analyzing the Bundle Size
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes and push the branch to your forked repository.
+4. Create a Pull Request with a detailed description of your changes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+Feel free to modify the content to better suit your project's specifics. If you have any questions or need further assistance, please open an issue on the repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
