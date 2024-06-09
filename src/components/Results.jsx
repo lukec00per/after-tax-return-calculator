@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
 const Results = ({ results }) => {
     if (!results) return null;
 
     const formatCurrency = (value) => {
-        return new Intl.NumberFormat('en-US', {
-            style: 'currency',
-            currency: 'USD',
+        return new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD",
         }).format(value);
     };
 
