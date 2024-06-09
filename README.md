@@ -10,13 +10,6 @@ This professional web application allows users to calculate their after-tax retu
 - [Contributing](#contributing)
 - [License](#license)
 
-## Features
-
-- **Input Initial Amount**: Enter the initial investment amount.
-- **Pre-Tax Rate of Return**: Specify the pre-tax rate of return.
-- **Calculation**: Calculate the after-tax rate of return and final amount for each scenario.
-- **Comparison**: Compare multiple tax scenarios to see how different tax rates impact the return on investment.
-
 ## Installation
 
 To run this application locally, follow these steps:
