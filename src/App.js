@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState } from "react";
 import InputForm from "./components/InputForm";
 import Results from "./components/Results";
