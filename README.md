@@ -4,7 +4,6 @@ This professional web application allows users to calculate their after-tax retu
 
 ## Table of Contents
 
-- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
