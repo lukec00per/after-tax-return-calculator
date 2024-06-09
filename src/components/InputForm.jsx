@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const InputForm = ({ onCalculate }) => {
-    const [initialAmount, setInitialAmount] = useState('');
-    const [preTaxRate, setPreTaxRate] = useState('');
-    const [taxScenarios, setTaxScenarios] = useState([{ federal: '', state: '', local: '' }]);
+    const [initialAmount, setInitialAmount] = useState("");
+    const [preTaxRate, setPreTaxRate] = useState("");
+    const [taxScenarios, setTaxScenarios] = useState([{ federal: "", state: "", local: "" }]);
 
     const handleScenarioChange = (index, key, value) => {
         const newTaxScenarios = taxScenarios.map((scenario, i) => {
@@ -46,7 +46,7 @@ const InputForm = ({ onCalculate }) => {
                         <input 
                             type="number" 
                             value={scenario.federal} 
-                            onChange={(e) => handleScenarioChange(index, 'federal', e.target.value)} 
+                            onChange={(e) => handleScenarioChange(index, "federal", e.target.value)} 
                         />
                     </div>
                     <div>
@@ -54,7 +54,7 @@ const InputForm = ({ onCalculate }) => {
                         <input 
                             type="number" 
                             value={scenario.state} 
-                            onChange={(e) => handleScenarioChange(index, 'state', e.target.value)} 
+                            onChange={(e) => handleScenarioChange(index, "state", e.target.value)} 
                         />
                     </div>
                     <div>
@@ -62,7 +62,7 @@ const InputForm = ({ onCalculate }) => {
                         <input 
                             type="number" 
                             value={scenario.local} 
-                            onChange={(e) => handleScenarioChange(index, 'local', e.target.value)} 
+                            onChange={(e) => handleScenarioChange(index, "local", e.target.value)} 
                         />
                     </div>
             
