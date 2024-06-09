@@ -6,16 +6,6 @@ const InputForm = ({ onCalculate }) => {
     const [preTaxRate, setPreTaxRate] = useState('');
     const [taxScenarios, setTaxScenarios] = useState([{ federal: '', state: '', local: '' }]);
 
-    const handleAddScenario = () => {
-        setTaxScenarios([...taxScenarios, { federal: '', state: '', local: '' }]);
-    };
-
-    const handleRemoveScenario = (index) => {
-        if (index !== 0) {
-            setTaxScenarios(taxScenarios.filter((_, i) => i !== index));
-        }
-    };
-
     const handleScenarioChange = (index, key, value) => {
         const newTaxScenarios = taxScenarios.map((scenario, i) => {
             if (i === index) {
