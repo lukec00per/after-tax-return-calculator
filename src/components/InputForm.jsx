@@ -1,4 +1,3 @@
-// src/components/InputForm.js
 import React, { useState } from 'react';
 
 const InputForm = ({ onCalculate }) => {
