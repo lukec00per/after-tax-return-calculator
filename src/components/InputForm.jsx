@@ -43,7 +43,7 @@ const InputForm = ({ onCalculate }) => {
             <div>
                 <h3>Taxes</h3>
                 <div>
-                    <label>Federal Tax Rate (%):</label>
+                    <label>Federal Tax (%):</label>
                     <input 
                         type="number" 
                         name="federalTaxRate"
@@ -52,7 +52,7 @@ const InputForm = ({ onCalculate }) => {
                     />
                 </div>
                 <div>
-                    <label>State Tax Rate (%):</label>
+                    <label>State Tax (%):</label>
                     <input 
                         type="number" 
                         name="stateTaxRate"
@@ -61,7 +61,7 @@ const InputForm = ({ onCalculate }) => {
                     />
                 </div>
                 <div>
-                    <label>Local Tax Rate (%):</label>
+                    <label>Local Tax (%):</label>
                     <input 
                         type="number" 
                         name="localTaxRate"
