@@ -1,6 +1,6 @@
 # After-Tax Return Calculator
 
-This professional web application allows users to calculate their after-tax return on investment. Users can input an initial amount, a pre-tax rate of return, and various tax rates at the federal, state, and local levels.
+This web application allows you to calculate your after-tax return on investment. To do so, input an initial amount, a pre-tax rate of return, and federal, sate, and local tax rates.
 
 ## Table of Contents
 
