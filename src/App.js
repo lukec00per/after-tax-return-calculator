@@ -4,38 +4,36 @@ import Results from "./components/Results";
 import "./App.css";
 
 const App = () => {
-  const [results, setResults] = useState(null);
+    const [results, setResults] = useState(null);
 
-  const calculateAfterTaxReturn = (initialAmount, preTaxRate, taxScenarios) => {
-    const initial = parseFloat(initialAmount);
-    const preTax = parseFloat(preTaxRate) / 100;
+    const calculateAfterTaxReturn = (initialAmount, preTaxRate, federalTaxRate, stateTaxRate, localTaxRate) => {
+        const initial = parseFloat(initialAmount);
+        const preTax = parseFloat(preTaxRate) / 100;
 
-    const newResults = taxScenarios.map((scenario) => {
-      const federalTax = parseFloat(scenario.federal) / 100 || 0;
-      const stateTax = parseFloat(scenario.state) / 100 || 0;
-      const localTax = parseFloat(scenario.local) / 100 || 0;
+        const federalTax = parseFloat(federalTaxRate) / 100 || 0;
+        const stateTax = parseFloat(stateTaxRate) / 100 || 0;
+        const localTax = parseFloat(localTaxRate) / 100 || 0;
 
-      const totalTaxRate = federalTax + stateTax + localTax;
-      const afterTaxRate = preTax * (1 - totalTaxRate);
+        const totalTaxRate = federalTax + stateTax + localTax;
+        const afterTaxRate = preTax * (1 - totalTaxRate);
 
-      const finalAmount = initial * (1 + afterTaxRate);
+        const finalAmount = initial * (1 + afterTaxRate);
 
-      return {
-        afterTaxRate: afterTaxRate * 100,
-        finalAmount: finalAmount,
-      };
-    });
+        const newResults = [{
+            afterTaxRate: afterTaxRate * 100,
+            finalAmount: finalAmount,
+        }];
 
-    setResults(newResults);
-  };
+        setResults(newResults);
+    };
 
-  return (
-    <div className="App">
-      <h1>After-Tax Return Calculator</h1>
-      <InputForm onCalculate={calculateAfterTaxReturn} />
-      <Results results={results} />
-    </div>
-  );
+    return (
+        <div className="App">
+            <h1>After-Tax Return Calculator</h1>
+            <InputForm onCalculate={calculateAfterTaxReturn} />
+            <Results results={results} />
+        </div>
+    );
 };
 
 export default App;
