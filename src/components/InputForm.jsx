@@ -1,14 +1,22 @@
 import React, { useState } from "react";
 
 const InputForm = ({ onCalculate }) => {
-    const [initialAmount, setInitialAmount] = useState("");
-    const [preTaxRate, setPreTaxRate] = useState("");
-    const [federalTaxRate, setFederalTaxRate] = useState("");
-    const [stateTaxRate, setStateTaxRate] = useState("");
-    const [localTaxRate, setLocalTaxRate] = useState("");
+    const [formData, setFormData] = useState({
+        initialAmount: "",
+        preTaxRate: "",
+        federalTaxRate: "",
+        stateTaxRate: "",
+        localTaxRate: ""
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        const { initialAmount, preTaxRate, federalTaxRate, stateTaxRate, localTaxRate } = formData;
         onCalculate(initialAmount, preTaxRate, federalTaxRate, stateTaxRate, localTaxRate);
     };
 
@@ -18,16 +26,18 @@ const InputForm = ({ onCalculate }) => {
                 <label>Initial Amount:</label>
                 <input 
                     type="number" 
-                    value={initialAmount} 
-                    onChange={(e) => setInitialAmount(e.target.value)} 
+                    name="initialAmount"
+                    value={formData.initialAmount} 
+                    onChange={handleChange} 
                 />
             </div>
             <div>
                 <label>Rate of Return (%):</label>
                 <input 
                     type="number" 
-                    value={preTaxRate} 
-                    onChange={(e) => setPreTaxRate(e.target.value)} 
+                    name="preTaxRate"
+                    value={formData.preTaxRate} 
+                    onChange={handleChange} 
                 />
             </div>
             <div>
@@ -36,24 +46,27 @@ const InputForm = ({ onCalculate }) => {
                     <label>Federal Tax Rate (%):</label>
                     <input 
                         type="number" 
-                        value={federalTaxRate} 
-                        onChange={(e) => setFederalTaxRate(e.target.value)} 
+                        name="federalTaxRate"
+                        value={formData.federalTaxRate} 
+                        onChange={handleChange} 
                     />
                 </div>
                 <div>
                     <label>State Tax Rate (%):</label>
                     <input 
                         type="number" 
-                        value={stateTaxRate} 
-                        onChange={(e) => setStateTaxRate(e.target.value)} 
+                        name="stateTaxRate"
+                        value={formData.stateTaxRate} 
+                        onChange={handleChange} 
                     />
                 </div>
                 <div>
                     <label>Local Tax Rate (%):</label>
                     <input 
                         type="number" 
-                        value={localTaxRate} 
-                        onChange={(e) => setLocalTaxRate(e.target.value)} 
+                        name="localTaxRate"
+                        value={formData.localTaxRate} 
+                        onChange={handleChange} 
                     />
                 </div>
             </div>
