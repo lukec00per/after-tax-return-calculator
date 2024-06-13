@@ -2,7 +2,7 @@ import React from "react";
 
 const Results = ({ results }) => {
     if (!results || results.length === 0) {
-        return <div>No results yet.</div>;
+        return <p>No results yet.</p;
     }
 
     const formatCurrency = (value) => {
