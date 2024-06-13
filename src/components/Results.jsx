@@ -1,9 +1,7 @@
 import React from "react";
 
 const Results = ({ results }) => {
-    if (!results || results.length === 0) {
-        return <p>No results yet.</p>;
-    }
+      if (!results) return null;
 
     const formatCurrency = (value) => {
         return new Intl.NumberFormat("en-US", {
