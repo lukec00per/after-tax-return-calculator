@@ -36,15 +36,15 @@ To run this application locally, follow these steps:
 
 ## Usage
 
-1. **Open the Application**: Open your web browser and go to `http://localhost:3000`.
+1. Open your web browser and go to `http://localhost:3000`.
 
-2. **Enter Initial Amount**: Input the initial investment amount.
+2. Input the initial investment amount.
 
-3. **Specify Pre-Tax Rate of Return**: Enter the expected pre-tax rate of return as a percentage.
+3. Enter the expected pre-tax rate of return as a percentage.
 
-4. **Enter Tax Rates**: Input federal, state, and local tax rates.
+4. Input federal, state, and local tax rates.
 
-5. **Calculate**: Click "Calculate" to compute the after-tax rate of return.
+5. Click **Calculate** to compute the after-tax rate of return.
     - The results will be displayed below the form.
 
 ## Contributing
