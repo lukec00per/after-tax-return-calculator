@@ -54,7 +54,7 @@ Contributions are welcome! If you have any suggestions or improvements, please f
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
 3. Commit your changes and push the branch to your forked repository.
-4. Create a Pull Request with a detailed description of your changes.
+4. Create a pull request with a detailed description of your changes.
 
 ## License
 
@@ -62,5 +62,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Feel free to modify the content to better suit your project's specifics. If you have any questions or need further assistance, please open an issue on the repository.
+Feel free to modify the content to suit your project's specifics better. If you have questions or need more help, please open an issue on the repository.
 
