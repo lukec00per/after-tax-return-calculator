@@ -15,7 +15,7 @@ To run this application locally, follow these steps:
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/your-username/after-tax-return-calculator.git
+    git clone https://github.com/lukec00per/after-tax-return-calculator.git
     cd after-tax-return-calculator
     ```
 
