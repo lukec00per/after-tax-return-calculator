@@ -2,6 +2,8 @@
 
 This web application allows you to calculate your after-tax return on investment. To do so, input an initial amount, a pre-tax rate of return, and any applicable federal, state, and local tax rates.
 
+**Note**: This application is designed for users subject to U.S. income and capital gains taxes.
+
 ## Table of Contents
 
 - [Installation](#installation)
