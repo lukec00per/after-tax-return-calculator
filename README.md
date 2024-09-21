@@ -46,11 +46,11 @@ Follow these steps to run the application locally:
 4. Enter any applicable federal, state, and local tax rates.
 
 5. Click **Calculate** to compute your after-tax rate of return.
-    - Results will display below the form.
+    - Results will be displayed below the form.
 
 ## Contributing
 
-Contributions are welcome! If you have any suggestions or improvements, please follow these steps:
+Contributions are welcome! If you have any suggestions or improvements, follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
