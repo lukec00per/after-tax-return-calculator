@@ -7,7 +7,7 @@ This web application lets you calculate your after-tax return on investment. To 
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
+- [User Guide](#user-guide)
 - [Contributing](#contributing)
 
 ## Installation
