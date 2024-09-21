@@ -35,7 +35,7 @@ Follow these steps to run the application locally:
 
     The application will run on `http://localhost:3000`.
 
-## Usage
+## User Guide
 
 1. Open your web browser and go to `http://localhost:3000`.
 
