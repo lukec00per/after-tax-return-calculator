@@ -37,6 +37,8 @@ Follow these steps to run the application locally:
 
 ## User Guide
 
+Follow these steps to use the application:
+
 1. Open your web browser and go to `http://localhost:3000`.
 
 2. Enter your initial investment amount.
