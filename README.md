@@ -12,7 +12,7 @@ This web application lets you calculate your after-tax return on investment. To 
 
 ## Installation
 
-To run this application locally, follow these steps:
+Follow these steps to run the application locally:
 
 1. **Clone the repository**:
 
