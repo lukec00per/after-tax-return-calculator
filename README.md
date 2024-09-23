@@ -4,6 +4,8 @@ This web application lets you calculate your after-tax return on investment. To 
 
 **Note**: This application is designed for users subject to U.S. income and capital gains taxes.
 
+<img src="public/after-tax-return-calculator.png" alt="After-Tax Return Calculator Screenshot" width="600"/>
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -40,13 +42,9 @@ Follow these steps to run the application locally:
 Follow these steps to use the application:
 
 1. Open your web browser and go to `http://localhost:3000`.
-
 2. Enter your initial investment amount.
-
 3. Enter your expected pre-tax rate of return as a percentage.
-
 4. Enter any applicable federal, state, and local tax rates.
-
 5. Click **Calculate** to compute your after-tax rate of return.
     - Results will be displayed below the form.
 
@@ -61,4 +59,4 @@ Contributions are welcome! If you have any suggestions or improvements, follow t
 
 ---
 
-Feel free to modify the content to suit your project's specifics better. If you have questions or need more help, please open an issue on the repository.
+Feel free to modify the content to suit your project's specifics better. If you have questions or need more help, open an issue on the repository.
